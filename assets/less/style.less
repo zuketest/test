@@ -1,0 +1,135 @@
+@import "bootstrap.less";
+
+body {
+  min-width: 320px;
+  #wrapper {
+    width: 100%;
+    height: 3000px;
+  }
+}
+
+.logo {
+  & > p {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    min-height: auto;
+    background: red;
+
+
+  
+  }
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+  .l {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 50px;
+    margin-right: 60px;
+    @media (max-width: @screen-sm-min) {
+      width: 30px;
+      height: 20px;
+    }      
+  }
+  .t {
+    display: flex;
+    flex: 1 1 auto;
+    height: 50px;
+
+    ul {
+        padding: 0;
+       display: flex;
+       width: 100%;
+    }
+    li {
+      flex: 1 1 auto;
+      height: 100%;
+      background: red;
+    }
+  }
+  li {
+    text-align: center;
+    flex: 1 1 auto;
+  }
+}
+.btn_o {
+ position: relative;
+}
+.test {
+
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+
+  .n {
+    @media (min-width: @screen-sm-min) {
+      width: @container-sm;
+    }
+
+  }
+}
+
+.bred {
+
+
+  &:after {
+    font-size: 10px;
+    color: #000;
+  }
+
+}
+
+.actionBtn {
+  .flex
+}
+.form {
+   @media (max-width: @screen-sm-min) {
+    display: none;
+  } 
+}
+.global {
+  width: auto;
+  background: #000;
+  color: #fff;
+  display: flex;
+  -ms-display: flex;
+  @media (max-width: @screen-lg-min) {
+    display: none;
+  }
+   ul {
+    padding: 0;
+    margin: 0 0 0 20px;
+    flex: 1 1 auto;
+
+  } 
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.hlog {
+  margin-right: 20px;
+  color: #fff;
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+.inputGet {text-align: right;}
+
+.bn {
+  width: 150px;
+  height: 60px;
+  background: green;
+}
